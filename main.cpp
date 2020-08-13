@@ -1,26 +1,33 @@
 #include <iostream>
+#include "Windows.h"
 using namespace std;
 int main()
 {
+	system("cls");
 	int sw;
-	string a, b, c;
-	cout << "Select case: \n1. Poem\n";
+	cout << "select case: ";
 	cin >> sw;
 
-	switch (sw)
+	if (sw == 1 or sw == 2)
 	{
-	case 1:
-		system("cls");
-		cout << "My name is: ";
-		cin >> a;	
-		cout << "\nMy lovely color is: ";
-		cin >> b;
-		cout << "\nMy dream car is: ";
-		cin >> c;
-
-		system("cls");
-		cout << "My name is: " + a + "\nMy lovely color is: " + b + "\nMy dream car is: " + c + "\n";
-		system("pause");
-		break;
+		switch (sw)
+		{
+		case 1:
+			cout << "dog";
+			Sleep(2000);
+			main();
+			break;
+		case 2:
+			cout << "cat";
+			Sleep(2000);
+			main();
+			break;
+		}
+	}	
+	else
+	{
+		cout << "case not exist";
+		Sleep(2000);
+		main();
 	}
 }
