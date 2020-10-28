@@ -7,8 +7,7 @@ int main()
 	switch (sw)
 	{
 	case 1:
-		std::cout << "\ndog";
-		Sleep(2000); main();
+		std::cout << "\ndog"; Sleep(2000); main();
 		break;
 	case 2:
 		std::cout << "\ncat"; Sleep(2000); main();
