@@ -1,33 +1,20 @@
 #include <iostream>
 #include "Windows.h"
-using namespace std;
+
 int main()
 {
-	system("cls");
-	int sw;
-	cout << "select case: ";
-	cin >> sw;
-
-	if (sw == 1 or sw == 2)
+    int sw{}; std::cout << "\nselect case: "; std::cin >> sw;
+	switch (sw)
 	{
-		switch (sw)
-		{
-		case 1:
-			cout << "dog";
-			Sleep(2000);
-			main();
-			break;
-		case 2:
-			cout << "cat";
-			Sleep(2000);
-			main();
-			break;
-		}
-	}	
-	else
-	{
-		cout << "case not exist";
-		Sleep(2000);
-		main();
+	case 1:
+		std::cout << "\ndog";
+		Sleep(2000); main();
+		break;
+	case 2:
+		std::cout << "\ncat"; Sleep(2000); main();
+		break;		
+	default:
+		std::cout << "\nbad number"; Sleep(1500); main();
+		break;
 	}
 }
